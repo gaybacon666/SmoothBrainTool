@@ -22,20 +22,20 @@ int Home()
     //Pwease choose one
     Console.WriteLine("                 ^________________________________________________________________^ ");
     Console.WriteLine("                 |                                                                | ");
-    Console.WriteLine("                 | 1:ShitCalc                   --shitty calculator               | "); //Shitty Calculator
-    Console.WriteLine("                 | 2:memeSay                    --just try it                     | ");//Meme Cowsay
-    Console.WriteLine("                 | 3:IP Pinger[WIP]             --ping IP/whois lookup : -p : -W  | "); //IP ping/ Display Whois lookup // -p Ping: Ping ip // -W Whois lookup
-    Console.WriteLine("                 | 4:           [WIP]                                             | ");
+    Console.WriteLine("                 | 1:shitCalc                   --shitty calculator               | "); //Shitty Calculator
+    Console.WriteLine("                 | 2:memeSay                    --just try it                     | "); //Meme Cowsay
+    Console.WriteLine("                 | 3:anyoneHome[WIP]            --ping IP/whois lookup            | "); //Ip ping/check online [with whois lookup?] 
+    Console.WriteLine("                 | 4:shitJack[WIP]              --shitty blackjack                | "); //Blackjack(21)
     Console.WriteLine("                 |                                                                | ");
     Console.WriteLine("                 | Q: quit       --only people with stupid baby disease use this  | "); // quit application
     Console.WriteLine("                 |________________________________________________________________| ");
 
-    input1();
+    HomeInput();
 
     return 0;
 }
 
-int input1()
+int HomeInput()
 {
     string _Maininput = Console.ReadLine();
 
@@ -55,7 +55,7 @@ int input1()
             break; //WIP
 
         case "4":
-            WIP();
+            blackjack();
             break;  //Minesweeper[WIP]
 
         case "q":
@@ -166,7 +166,14 @@ int ShitCalc()
     //Be patient//
     Thread.Sleep(500);
     boofer();
+    //string _continue = Console.Read();
 
+    //switch (_continue) {
+       // case "q":
+      //  Home();
+    //    break;
+    //}
+    //
     //return to home pg
     Home();
 
@@ -179,7 +186,7 @@ int boofer()
     //scuffed smooth brain buffer//
     Console.WriteLine(" ");
     Console.WriteLine("Press ENTER to continue...");
-    Console.Read();
+   
 
     return 0;
 } // smooth brain buffer
@@ -187,8 +194,8 @@ int boofer()
 
 int ipPing()
 {
+    WIP();
 
-Banner:
     Console.Clear();
     HomeBanner();
 
@@ -226,7 +233,7 @@ Banner:
     //WIP();
 
     return 0;
-}
+} //anyoneHome
 int whois() {
     Console.WriteLine("Fuck You");
     Thread.Sleep(2500);
@@ -234,8 +241,44 @@ int whois() {
     return 0;
 }
 int  Ping() {
-    Console.WriteLine("**Pinging**");
+
+    Console.Clear();
+    HomeBanner();
+
+    Console.WriteLine("                 ^_______________________________________^ ");
+    Console.WriteLine("                 |  q: quit                              | ");
+    Console.WriteLine("                 |                         _  _          | "); //Ping
+    Console.WriteLine("                 |                        / / /          | "); //nmap-type/whois look-up
+    Console.WriteLine("                 |                       _L_|_L_         | ");
+    Console.WriteLine("                 |                       ( U _ U)        | ");
+    Console.WriteLine("                 |                                       | ");
+    Console.WriteLine("                 |  Ip to Ping:                            "); // Return home
+    Console.WriteLine("                 |_______________________________________| ");
+
+    string _ip = Console.ReadLine();
+
+        switch (_ip) {
+            case "q":
+            Home();
+            break;
+    }
+    
+    Console.Clear();
+    HomeBanner();
+
+    Console.WriteLine("                 ^_______________________________________^ ");
+    Console.WriteLine("                 |  q: quit                              | ");
+    Console.WriteLine("                 |                         _  _          | "); //Ping
+    Console.WriteLine("                 |                        / / /          | "); //nmap-type/whois look-up
+    Console.WriteLine("                 |                       _L_|_L_         | ");
+    Console.WriteLine("                 |                       ( U _ U)        | ");
+    Console.WriteLine("                 |                                       | ");
+    Console.WriteLine("                 |  Ip to Ping: " + _ip + " **Pinging**    "); // Return home
+    Console.WriteLine("                 |_______________________________________| ");
+
+
     Thread.Sleep(2500);
+    
     ipPing();
     return 0;
 }
@@ -260,6 +303,56 @@ int WIP()
     return 0;
 }
 
+int blackjack() {
+    WIP();
+
+    //player
+    int  _hand = 0;
+    
+    //dealer
+    int _dealerHand = 0;
+
+    //cards
+    int[] cards = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+
+    //turn // 0=dealer, 1=player
+
+    //generate random card
+
+    Console.WriteLine();
+
+    //player choice
+    string _pChoice = Console.ReadLine();
+
+    switch (_pChoice)
+    {
+
+        case "h":
+            //hit
+            break;
+
+        case "s":
+            //stand
+            break;
+
+        case "f":
+            blackjack(); //forfiet
+            break;
+    }
+
+
+
+    //stand
+    //forfeit
+
+    //display scores
+    Console.WriteLine("Hand: " + _hand);
+    Console.WriteLine("Dealer: " + _dealerHand);
+
+    
+    return 0;
+
+}
 
 int meme()
 {
@@ -283,6 +376,7 @@ int meme()
         case "icon":
             _say = "jewishmoocow";
             break;
+
     }
 
 
@@ -291,10 +385,10 @@ int meme()
 
     Console.SetWindowSize(80, 25);
 
-    Console.WriteLine("    ────▄▀▀░░░░░░░░░░░░░▀▄                                       ");
-    Console.WriteLine("    ──▄▀░░░░░░░░░░░░░░░░░░▀▄                                     ");
+    Console.WriteLine("  ────▄▀▀░░░░░░░░░░░░░▀▄                                       ");
+    Console.WriteLine("  ──▄▀░░░░░░░░░░░░░░░░░░▀▄                                     ");
     Console.WriteLine("  ──█░░░░░░░░░░░░░░░░░░░░░▀▄                                     ");
-    Console.WriteLine("   ─▐▌░░░░░░░░▄▄▄▄▄▄▄░░░░░░░▐▌                                   ");
+    Console.WriteLine("  ─▐▌░░░░░░░░▄▄▄▄▄▄▄░░░░░░░▐▌                                   ");
     Console.WriteLine("  ─█░░░░░░░░░░░▄▄▄▄░░▀▀▀▀▀░░█                                    ");
     Console.WriteLine("  ▐▌░░░░░░░▀▀▀▀░░░░░▀▀▀▀▀░░░▐▌          _____________________    ");
     Console.WriteLine("  █░░░░░░░░░▄▄▀▀▀▀▀░░░░▀▀▀▀▄░█         |                     |   ");
@@ -304,11 +398,11 @@ int meme()
     Console.WriteLine("  ─▐▌░░░░▄░░░░░░░░░░░░░▌░░░░░░█                                  ");
     Console.WriteLine("  ──▐▌░░▐░░░░░░░░░░░░░░▀▄░░░░░█                                  ");
     Console.WriteLine("  ───█░░░▌░░░░░░░░▐▀░░░░▄▀░░░▐▌                                  ");
-    Console.WriteLine(" ───▐▌░░▀▄░░░░░░░░▀░▀░▀▀░░░▄▀                                    ");
+    Console.WriteLine("  ───▐▌░░▀▄░░░░░░░░▀░▀░▀▀░░░▄▀                                    ");
     Console.WriteLine("  ───▐▌░░▐▀▄░░░░░░░░░░░░░░░░█                                    ");
-    Console.WriteLine(" ───▐▌░░░▌░▀▄░░░░▀▀▀▀▀▀░░░█                                      ");
-    Console.WriteLine(" ───█░░░▀░░░░▀▄░░░░░░░░░░▄▀                                      ");
-    Console.WriteLine("──▐▌░░░░░░░░░░▀▄░░░░░░▄▀                                         ");
+    Console.WriteLine("  ───▐▌░░░▌░▀▄░░░░▀▀▀▀▀▀░░░█                                      ");
+    Console.WriteLine("  ───█░░░▀░░░░▀▄░░░░░░░░░░▄▀                                      ");
+    Console.WriteLine("  ──▐▌░░░░░░░░░░▀▄░░░░░░▄▀                                         ");
     Console.WriteLine("  ─▄▀░░░▄▀░░░░░░░░▀▀▀▀█▀                                         ");
     Console.WriteLine("  ▀░░░▄▀░░░░░░░░░░▀░░░▀▀▀▀▄▄▄▄▄                                  ");
 
@@ -317,9 +411,7 @@ int meme()
     Home();
 
     return 0;
-}
-
-
+}  //Wojak Cowsey
 
 int weed()
 {
