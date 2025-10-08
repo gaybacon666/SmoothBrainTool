@@ -9,7 +9,7 @@
  - ShitJack        *-A shitty blackjack game*
  - secrets         *-if i tell you what they are than its not a secret*
 
-Useless meme multi tool(~~mostyly usless~~) that was made out of boredom and the desire to learn.
+Meme multi tool(~~mostyly usless~~) that was made out of boredom and the desire to learn.
 ---
 
 *-m0us3*
