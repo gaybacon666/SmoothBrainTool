@@ -2,6 +2,17 @@
 using System.Net;
 using System.Net.NetworkInformation;
 
+
+//   _________________________________   ______________________
+//  | Smooth      |                   | |            |         |
+//  |  Brain      | Date:10/9 / 2025| | | DAYS:4     | YEARS:0 |
+//  |-------------|-------------------| |            |_________|
+//  | VERSION     | Author            | | WEEKS:0    |_________| 
+//  | 0.1.0       |                   | |            |         | 
+//  |  C#         | -m0use            | | MONTHS:0   |  =UWU=  | 
+//  |_____________|___________________| |____________|_________| 
+// ______________________________________________________________
+
 _main.Home();
 
 public class _main {
@@ -87,7 +98,7 @@ public class _calc {
         Console.WriteLine("Gimme da Numbas");
 
         // get Numbers
-        string _numb1 = Console.ReadLine(); // number Uno
+        string _numb1 = Console.ReadLine();
 
         switch (_numb1)
         {
@@ -95,11 +106,19 @@ public class _calc {
                 _main.Home();
                 break;
 
+            case "weed":
+                _secrets.weed();
+                break;
+
+            case "uwu":
+                _secrets.uwu();
+                break;
+
         }
 
         string _numb2 = Console.ReadLine(); // number 2
 
-        //cwean 
+        //cwean da scwean
         Console.Clear();
         _banners.shitcalcBanner();
 
@@ -160,7 +179,7 @@ public class _anyoneHome {
     public static int ipPing()
     {
         _errors.WIP();
-
+        
         Console.Clear();
         _banners.HomeBanner();
 
@@ -191,7 +210,7 @@ public class _anyoneHome {
             case "q":
                 _main.Home();
                 break;
-
+                
         }
         //Nmap type ping
 
