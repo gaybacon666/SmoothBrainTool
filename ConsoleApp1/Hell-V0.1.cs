@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Net;
 using System.Net.NetworkInformation;
-using System.Runtime.Intrinsics.Arm;
 
 
 //   _________________________________   ______________________
@@ -434,8 +433,6 @@ public class _secrets {
         Thread.Sleep(1500);
         _main.Home();
     } // SHHHH!!!! its a secret
-
-    
 }
 
 public class _banners {
