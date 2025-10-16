@@ -5,17 +5,18 @@ using System.Net.NetworkInformation;
 
 //   _________________________________   ______________________
 //  | Smooth      |                   | |            |         |
-//  |  Brain      | Date:10/9 / 2025| | | DAYS:4     | YEARS:0 |
+//  |  Brain      | Date:10/9 /2025   | | DAYS:5     |  =420=  |
 //  |-------------|-------------------| |            |_________|
 //  | VERSION     | Author            | | WEEKS:0    |_________| 
 //  | 0.1.0       |                   | |            |         | 
-//  |  C#         | -m0use            | | MONTHS:0   |  =UWU=  | 
+//  | LANG: C#    | -m0use            | | MONTHS:0   |  =UWU=  | 
 //  |_____________|___________________| |____________|_________| 
 // ______________________________________________________________
 
-_main.Home();
+Console.Clear();
+Main.Home();
 
-public class _main {
+public class Main {
     public static int Home()
     {
         Console.SetWindowSize(110, 25);
@@ -24,39 +25,39 @@ public class _main {
         Console.Clear();
 
         //Call banner
-        _banners.HomeBanner();
+        Banners.HomeBanner();
 
         //Pwease choose one
-        _banners.choiceBanner();
+        Banners.ChoiceBanner();
 
-        _input.HomeInput();
+        Input.HomeInput();
 
         return 0;
     }
 }
 
-public class _input {
+public class Input {
     public static int HomeInput()
     {
-        string _Maininput = Console.ReadLine();
+        string? _Maininput = Console.ReadLine();
 
         switch (_Maininput)
         {
 
             case "1":
-                _calc.ShitCalc();
+                Calc.ShitCalc();
                 break;  //Shitty calculator
 
             case "2":
-                _memeSay.meme();
+                MemeSay.Meme();
                 break;  //MemeSay // cowsay but not
 
             case "3":
-                _anyoneHome.ipPing();
+                AnyoneHome.IpPing();
                 break; //WIP
 
             case "4":
-                _shitJack.blackjack();
+                ShitJack.Blackjack();
                 break;  //Blackjack[WIP]
 
             case "q":
@@ -65,15 +66,15 @@ public class _input {
 
             //secrets
             case "69":
-                _secrets.uwu();
+                Secrets.Uwu();
                 break;  //secret1
 
             case "uwu":
-                _secrets.uwu();
+                Secrets.Uwu();
                 break;  //Secret2
 
             case "420":
-                _secrets.weed();
+                Secrets.Weed();
                 break; //Secret3
         }
         return 0;
@@ -81,107 +82,40 @@ public class _input {
     }
 }
 
-public class _calc {
+public class Calc {
     public static int ShitCalc()
     {
+        Errors.WIP();
+        /*
+        Console.WriteLine("test");
+        Console.ReadLine();
+        */
 
-        //sqwueky cwean
-        Console.Clear();
+        
+       //get equation
+       //define number 1
+       //define number 2
+       //deffine opperand
+       //return answer
+       
+       
+       
 
-        //set Window Size
-        Console.SetWindowSize(50, 17);
-
-        //Call Banner
-        _banners.shitcalcBanner();
-
-
-        Console.WriteLine("Gimme da Numbas");
-
-        // get Numbers
-        string _numb1 = Console.ReadLine();
-
-        switch (_numb1)
-        {
-            case "q":
-                _main.Home();
-                break;
-
-            case "weed":
-                _secrets.weed();
-                break;
-
-            case "uwu":
-                _secrets.uwu();
-                break;
-
-        }
-
-        string _numb2 = Console.ReadLine(); // number 2
-
-        //cwean da scwean
-        Console.Clear();
-        _banners.shitcalcBanner();
-
-        //Add numbers
-        decimal _total = Convert.ToDecimal(_numb1) + Convert.ToDecimal(_numb2); // stupid baby math
-
-        //Subtract numbers
-        decimal _difference = Convert.ToDecimal(_numb1) - Convert.ToDecimal(_numb2); // stupid baby math but backwards
-
-        //Multiply numbers
-        decimal _sum = Convert.ToDecimal(_numb1) * Convert.ToDecimal(_numb2);   // smooth brain idiot juice
-
-        //Divide numbers
-        decimal _div = Convert.ToDecimal(_numb1) / Convert.ToDecimal(_numb2); //smooth brain fungus math
-
-        //Write numbers to console
-        Console.WriteLine("");
-        Console.WriteLine("number 1: " + _numb1);
-        Console.WriteLine("number 2: " + _numb2);
-        Console.WriteLine("----------------------------------");
-
-        //give it some space damn
-        Console.WriteLine("--AnSwErS FoR dA WeTaRdS--");
-        Console.WriteLine("");
-
-        //Stupid smooth brain math answers
-        Console.WriteLine("Total: " + _total);
-        Console.WriteLine("Difference: " + _difference);
-        Console.WriteLine("Sum: " + _sum);
-        Console.WriteLine("Quotient: " + _div);
-
-        //Be patient//
-        string _n = Console.ReadLine();
-
-        switch (_n) {
-            case "q":
-                _main.Home();
-                break;
-        }
-
-        _utils.boofer();
-        //string _continue = Console.Read();
-
-        //switch (_continue) {
-        // case "q":
-        //  Home();
-        //    break;
-        //}
-        //
-        //return to home pg
-        _main.Home();
+       
+   
+       
 
         return 0;
     } //Shitcalc
 }
 
-public class _anyoneHome {
-    public static int ipPing()
+public class AnyoneHome {
+    public static int IpPing()
     {
-        _errors.WIP();
+        Errors.WIP();
         
         Console.Clear();
-        _banners.HomeBanner();
+        Banners.HomeBanner();
 
 
         Console.WriteLine("                 ^_______________________________________^ ");
@@ -194,7 +128,7 @@ public class _anyoneHome {
         Console.WriteLine("                 | q: Home                               | "); // Return home
         Console.WriteLine("                 |_______________________________________| ");
 
-        string _pingtype = Console.ReadLine();
+        string? _pingtype = Console.ReadLine();
 
         switch (_pingtype)
         {
@@ -204,11 +138,11 @@ public class _anyoneHome {
                 break;
 
             case "2":
-                whois();
+                Whois();
                 break;
 
             case "q":
-                _main.Home();
+                Main.Home();
                 break;
                 
         }
@@ -219,17 +153,17 @@ public class _anyoneHome {
         return 0;
     } //anyoneHome
 
-    public static int whois() {
+    public static int Whois() {
         Console.WriteLine("Fuck You");
         Thread.Sleep(2500);
-        ipPing();
+        IpPing();
         return 0;
     } //whois lookup
 
     public static int Ping() {
 
         Console.Clear();
-        _banners.HomeBanner();
+        Banners.HomeBanner();
 
         Console.WriteLine("                 ^_______________________________________^ ");
         Console.WriteLine("                 |  q: quit                              | ");
@@ -241,16 +175,16 @@ public class _anyoneHome {
         Console.WriteLine("                 |  Ip to Ping:                            "); // Return home
         Console.WriteLine("                 |_______________________________________| ");
 
-        string _ip = Console.ReadLine();
+        string? _ip = Console.ReadLine();
 
         switch (_ip) {
             case "q":
-                _main.Home();
+                Main.Home();
                 break;
         }
 
         Console.Clear();
-        _banners.HomeBanner();
+        Banners.HomeBanner();
 
         Console.WriteLine("                 ^_______________________________________^ ");
         Console.WriteLine("                 |  q: quit                              | ");
@@ -265,76 +199,100 @@ public class _anyoneHome {
 
         Thread.Sleep(2500);
 
-        ipPing();
+        IpPing();
         return 0;
     } //ping ip 
 }
 
-public class _shitJack {
-    public static int blackjack() {
-        _errors.WIP();
+public class ShitJack {
 
-        //player
-        int _hand = 0;
+    public static int Blackjack() {
 
-        //dealer
-        int _dealerHand = 0;
+        // card count
+        int _player = 0;
+        int _dealer = 0;
+        int _playerTotal = _player + 0;
+        int _dealerTotal = _dealer + 0;
 
-        //cards
-        int[] cards = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
-
-        //turn // 0=dealer, 1=player
-
-        //generate random card
-
-        Console.WriteLine();
-
+        //display scores
+        BlackJackBoard();
+      
+        //Dealer hand
         //first 20 cards
         //give player 2 cards
         //give dealer 2 cards
 
         //player choice
-        string _pChoice = Console.ReadLine();
-
-        switch (_pChoice)
+        string? Choice()
         {
+            string? _pChoice = Console.ReadLine();
 
-            case "h":
-                //hit
-                break;
+            switch (_pChoice)
+            {
 
-            case "s":
-                //stand
-                break;
+                case "h":
+                    //hit
+                    _RandCard();
+                    break;
 
-            case "f":
-                blackjack(); //forfiet
-                break;
+                case "s":
+                    //stand
+                    break;
+
+                case "f":
+                    Blackjack(); //forfiet
+                    break;
+            }
+
+            return _pChoice;
         }
 
+        //start//hit
 
 
         //stand
-        //forfeit
 
-        //display scores
-        Console.WriteLine("Hand: " + _hand);
-        Console.WriteLine("Dealer: " + _dealerHand);
+        int _RandCard()
+        {
 
+            Random _Card = new Random();
+            int _CardInt = Convert.ToInt32(_Card.Next(1, 12));
+
+            return _CardInt;
+        } //Random Card
+
+         int BlackJackBoard()
+        {
+            Console.Clear();
+            Banners.HomeBanner();
+
+            Console.WriteLine("                                   -----------------    ");
+            Console.WriteLine("                                  |     Dealer      |  ");
+            Console.WriteLine("                                          "+ _dealerTotal +"  ");
+            Console.WriteLine("                                  |_________________|  ");
+            Console.WriteLine("                                  |     Player      |  ");
+            Console.WriteLine("                                          " + _playerTotal +"  ");
+            Console.WriteLine("                                  |                 |    ");
+            Console.WriteLine("                                   -----------------   ");
+
+            Choice();
+
+            return 0;
+        } //Blackjack Board
 
         return 0;
 
     } //Blackjack
 }
 
-public class _memeSay {
-    public static void meme()
+public class MemeSay {
+    public static void Meme()
     {
         Console.Clear();
         Console.SetWindowSize(15, 5);
         Console.WriteLine("INPUT TEXT: ");
 
-        string _say = Console.ReadLine();
+        string? _say = Console.ReadLine();
 
 
         switch (_say)
@@ -382,12 +340,12 @@ public class _memeSay {
 
         Console.ReadLine();
 
-        _main.Home();
+        Main.Home();
     }  //Wojak Cowsay
 }
 
-public class _secrets {
-    public static void weed()
+public class Secrets {
+    public static void Weed()
     {
         Console.Clear();
         Console.SetWindowSize(35, 20);
@@ -409,10 +367,10 @@ public class _secrets {
         Console.WriteLine("                 |              ");
 
         Thread.Sleep(2500);
-        _main.Home();
+        Main.Home();
     } //Secret of the weed
 
-    public static void uwu()
+    public static void Uwu()
     {
         Console.Clear();
 
@@ -431,11 +389,11 @@ public class _secrets {
         Console.WriteLine("  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀       ▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ");
         Console.WriteLine("                                         ");
         Thread.Sleep(1500);
-        _main.Home();
+        Main.Home();
     } // SHHHH!!!! its a secret
 }
 
-public class _banners {
+public class Banners {
    
     public static void HomeBanner()
     {
@@ -450,7 +408,7 @@ public class _banners {
         Console.WriteLine("                                                                                 -m0us3                 ");
     }
 
-    public static void choiceBanner()
+    public static void ChoiceBanner()
     {
         Console.WriteLine("");
         Console.WriteLine("                                 Welcome To stupid smooth brain land");
@@ -467,7 +425,7 @@ public class _banners {
         Console.WriteLine("                 |________________________________________________________________| ");
     }
 
-    public static void shitcalcBanner()
+    public static void ShitcalcBanner()
     {
         Console.WriteLine("     ___ _    _ _    ____      _        ");
         Console.WriteLine("    | __| |_ (_) |_ / ___|__ _| |___    ");
@@ -478,8 +436,8 @@ public class _banners {
     }
 }
 
-public class _utils {
-    public static void boofer()
+public class Utils {
+    public static void Boofer()
     {
 
         //scuffed smooth brain buffer//
@@ -489,12 +447,12 @@ public class _utils {
     } // smooth brain buffer
 }
 
-public class _errors {
+public class Errors {
     public static int WIP()
     {
         Console.Clear();
         
-        _banners.HomeBanner();
+        Banners.HomeBanner();
 
         Console.WriteLine("");
         Console.WriteLine("");
@@ -506,7 +464,7 @@ public class _errors {
         Console.WriteLine("                                                              ( x _ x)  ");
 
         Thread.Sleep(5000);
-        _main.Home();
+        Main.Home();
 
         return 0;
     } //WIP ERROR
