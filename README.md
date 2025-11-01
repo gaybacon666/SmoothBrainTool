@@ -5,7 +5,6 @@
 ##### Features
  - Shitcalc        *-A shitty calculator*
  - MemeSay         *-CowSay but wojak*
- - AnyoneHome      *-ip pinger [with whois lookup?]*
  - ShitJack        *-A shitty blackjack game*
  - secrets         *-if i tell you what they are than its not a secret*
 
